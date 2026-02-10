@@ -1,0 +1,1904 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocolo de Reprogramação Neural - Transforme Sua Vida Sexual em 30 Dias</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Clash+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #DC2626;
+            --primary-light: #EF4444;
+            --primary-glow: rgba(220, 38, 38, 0.5);
+            --secondary: #EA580C;
+            --accent: #D97706;
+            --dark: #000000;
+            --dark-card: rgba(10, 10, 10, 0.6);
+            --text: #F5F5F5;
+            --text-muted: #A1A1AA;
+            --success: #059669;
+            --glass: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.08);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--dark);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* Background Gradient Mesh */
+        body::before {
+            content: '';
+            position: fixed;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(234, 88, 12, 0.12) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(220, 38, 38, 0.12) 0%, transparent 50%),
+                radial-gradient(circle at 40% 20%, rgba(217, 119, 6, 0.08) 0%, transparent 50%);
+            animation: meshMove 20s ease-in-out infinite;
+            pointer-events: none;
+            z-index: 0;
+        }
+        
+        @keyframes meshMove {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            50% { transform: translate(-5%, 5%) rotate(5deg); }
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+        }
+        
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        @media (min-width: 768px) {
+            .container {
+                max-width: 720px;
+                padding: 0 32px;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .container {
+                max-width: 1200px;
+            }
+        }
+        
+        /* Sticky Header */
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(10, 10, 15, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            z-index: 1000;
+            padding: 16px 0;
+            border-bottom: 1px solid var(--glass-border);
+            transform: translateY(-100%);
+            animation: slideDown 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.5s;
+        }
+        
+        @keyframes slideDown {
+            to { transform: translateY(0); }
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 18px;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -0.02em;
+        }
+        
+        @media (min-width: 768px) {
+            .logo {
+                font-size: 20px;
+            }
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 100px 0 60px;
+            position: relative;
+        }
+        
+        @media (min-width: 768px) {
+            .hero {
+                padding: 140px 0 80px;
+            }
+        }
+        
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            border-radius: 100px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            margin: 0 auto 24px;
+            opacity: 0;
+            animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.3s;
+        }
+        
+        .badge-dot {
+            width: 6px;
+            height: 6px;
+            background: var(--primary);
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(--primary-glow);
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(0.8); }
+        }
+        
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .hero-title {
+            font-size: clamp(32px, 8vw, 56px);
+            text-align: center;
+            margin-bottom: 24px;
+            opacity: 0;
+            animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.5s;
+        }
+        
+        .hero-title .gradient-text {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero-subtitle {
+            text-align: center;
+            font-size: 18px;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 48px;
+            line-height: 1.6;
+            opacity: 0;
+            animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.7s;
+        }
+        
+        @media (min-width: 768px) {
+            .hero-subtitle {
+                font-size: 20px;
+            }
+        }
+        
+        /* Video Container */
+        .video-wrapper {
+            max-width: 900px;
+            margin: 0 auto 40px;
+            opacity: 0;
+            animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.9s;
+        }
+        
+        .video-container {
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 
+                0 20px 60px rgba(0, 0, 0, 0.4),
+                0 0 40px var(--primary-glow);
+            position: relative;
+        }
+        
+        .video-container::before {
+            content: '';
+            position: absolute;
+            inset: -2px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 18px;
+            z-index: -1;
+            opacity: 0.5;
+            filter: blur(10px);
+        }
+        
+        /* Timer */
+        .timer-section {
+            max-width: 500px;
+            margin: 48px auto;
+            padding: 32px 24px;
+            background: var(--glass);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .timer-section::before {
+            content: '';
+            position: absolute;
+            inset: -2px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 22px;
+            z-index: -1;
+            opacity: 0.3;
+            filter: blur(20px);
+        }
+        
+        .timer-label {
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .timer-icon {
+            width: 16px;
+            height: 16px;
+            fill: var(--accent);
+        }
+        
+        .timer-display {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+        
+        .timer-block {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--glass-border);
+            padding: 16px 12px;
+            border-radius: 12px;
+            min-width: 70px;
+            position: relative;
+        }
+        
+        .timer-number {
+            font-size: 32px;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: block;
+            font-variant-numeric: tabular-nums;
+        }
+        
+        .timer-unit {
+            font-size: 10px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 600;
+        }
+        
+        .timer-warning {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+        
+        /* CTA Button */
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 18px 40px;
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 12px;
+            text-align: center;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            box-shadow: 0 8px 32px var(--primary-glow);
+            position: relative;
+            overflow: hidden;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            min-height: 56px;
+        }
+        
+        @media (min-width: 768px) {
+            .cta-button {
+                width: auto;
+                padding: 20px 48px;
+                font-size: 17px;
+            }
+        }
+        
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, var(--secondary), var(--primary));
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .cta-button:hover::before,
+        .cta-button:active::before {
+            opacity: 1;
+        }
+        
+        .cta-button span {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .cta-button svg {
+            position: relative;
+            z-index: 1;
+            width: 20px;
+            height: 20px;
+        }
+        
+        .cta-button:active {
+            transform: scale(0.98);
+        }
+        
+        .cta-container {
+            text-align: center;
+        }
+        
+        .cta-subtext {
+            margin-top: 16px;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+        
+        /* Section */
+        .section {
+            padding: 80px 0;
+            position: relative;
+        }
+        
+        @media (min-width: 768px) {
+            .section {
+                padding: 120px 0;
+            }
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 64px;
+        }
+        
+        .section-title {
+            font-size: clamp(28px, 6vw, 48px);
+            margin-bottom: 16px;
+        }
+        
+        .section-subtitle {
+            font-size: 18px;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        /* Glass Card */
+        .glass-card {
+            background: var(--glass);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 32px 24px;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+        }
+        
+        @media (min-width: 768px) {
+            .glass-card {
+                padding: 40px 32px;
+            }
+        }
+        
+        .glass-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        .glass-card::before {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 20px;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.4s;
+        }
+        
+        .glass-card:hover::before {
+            opacity: 0.1;
+        }
+        
+        /* Icon */
+        .icon-wrapper {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 24px var(--primary-glow);
+        }
+        
+        .icon-wrapper svg {
+            width: 24px;
+            height: 24px;
+            fill: white;
+        }
+        
+        /* Grid */
+        .grid {
+            display: grid;
+            gap: 24px;
+            grid-template-columns: 1fr;
+        }
+        
+        @media (min-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 32px;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .grid.grid-3 {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        /* Problem Cards */
+        .problem-card h3 {
+            font-size: 20px;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .problem-card p {
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+        
+        /* Steps */
+        .step {
+            display: flex;
+            gap: 20px;
+            align-items: start;
+        }
+        
+        @media (min-width: 768px) {
+            .step {
+                gap: 32px;
+            }
+        }
+        
+        .step-number {
+            flex-shrink: 0;
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 800;
+            box-shadow: 0 8px 24px var(--primary-glow);
+        }
+        
+        .step-content h3 {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+        
+        .step-content p {
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+        
+        /* Testimonials */
+        .testimonial {
+            background: var(--glass);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 32px 24px;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        
+        .testimonial:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 60px rgba(255, 51, 102, 0.2);
+        }
+        
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+        
+        .testimonial-avatar {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 24px;
+            position: relative;
+        }
+        
+        .testimonial-avatar::before {
+            content: '';
+            position: absolute;
+            inset: -3px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 50%;
+            z-index: -1;
+            opacity: 0.3;
+            filter: blur(8px);
+        }
+        
+        .testimonial-info h4 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        
+        .testimonial-info span {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+        
+        .testimonial-text {
+            color: var(--text);
+            line-height: 1.7;
+            font-size: 15px;
+        }
+        
+        /* Stats */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        
+        @media (min-width: 768px) {
+            .stats-grid {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 32px;
+            }
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 40px;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--accent), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+            display: block;
+        }
+        
+        .stat-label {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+        
+        /* Phases */
+        .phase {
+            background: var(--glass);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 32px 24px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .phase::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(180deg, var(--primary), var(--secondary));
+            box-shadow: 0 0 20px var(--primary-glow);
+        }
+        
+        .phase-label {
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent);
+            margin-bottom: 12px;
+        }
+        
+        .phase h3 {
+            font-size: 24px;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .phase ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .phase li {
+            padding-left: 28px;
+            position: relative;
+            margin-bottom: 12px;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+        
+        .phase li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 16px;
+            height: 16px;
+            background: linear-gradient(135deg, var(--success), #047857);
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(5, 150, 105, 0.5);
+        }
+        
+        .phase li::after {
+            content: '';
+            position: absolute;
+            left: 5px;
+            top: 11px;
+            width: 6px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+        
+        .phase-result {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid var(--glass-border);
+            color: var(--success);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        /* Bonus */
+        .bonus {
+            background: var(--glass);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 32px 24px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .bonus::before {
+            content: '';
+            position: absolute;
+            inset: -2px;
+            background: linear-gradient(135deg, var(--accent), var(--primary));
+            border-radius: 22px;
+            z-index: -1;
+            opacity: 0.1;
+        }
+        
+        .bonus-tag {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent), var(--primary));
+            color: var(--dark);
+            padding: 6px 16px;
+            border-radius: 100px;
+            font-size: 11px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 16px;
+        }
+        
+        .bonus h3 {
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+        
+        .bonus-value {
+            color: var(--accent);
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 16px;
+        }
+        
+        .bonus p {
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+        
+        /* Price Stack */
+        .price-stack {
+            background: var(--glass);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 40px 24px;
+            max-width: 500px;
+            margin: 64px auto;
+            text-align: center;
+            position: relative;
+        }
+        
+        .price-stack::before {
+            content: '';
+            position: absolute;
+            inset: -3px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 27px;
+            z-index: -1;
+            opacity: 0.2;
+            filter: blur(20px);
+        }
+        
+        .price-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 16px 0;
+            border-bottom: 1px solid var(--glass-border);
+        }
+        
+        .price-row:last-child {
+            border-bottom: none;
+        }
+        
+        .price-label {
+            color: var(--text-muted);
+            font-size: 15px;
+        }
+        
+        .price-value {
+            font-weight: 700;
+            color: var(--text);
+        }
+        
+        .price-divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--primary), transparent);
+            margin: 24px 0;
+        }
+        
+        .price-total-old {
+            font-size: 24px;
+            color: var(--text-muted);
+            text-decoration: line-through;
+            opacity: 0.6;
+            margin-bottom: 12px;
+        }
+        
+        .price-total-new {
+            font-size: 56px;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--success), #047857);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 12px;
+            line-height: 1;
+        }
+        
+        .price-savings {
+            color: var(--accent);
+            font-weight: 700;
+            font-size: 16px;
+        }
+        
+        /* Guarantee */
+        .guarantee {
+            background: linear-gradient(135deg, var(--success), #047857);
+            color: white;
+            padding: 48px 24px;
+            border-radius: 24px;
+            text-align: center;
+            max-width: 600px;
+            margin: 64px auto;
+            position: relative;
+            box-shadow: 0 20px 60px rgba(5, 150, 105, 0.3);
+        }
+        
+        .guarantee-icon {
+            width: 64px;
+            height: 64px;
+            margin: 0 auto 24px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .guarantee-icon svg {
+            width: 32px;
+            height: 32px;
+            fill: white;
+        }
+        
+        .guarantee h3 {
+            font-size: 28px;
+            margin-bottom: 16px;
+        }
+        
+        .guarantee p {
+            font-size: 16px;
+            line-height: 1.7;
+            opacity: 0.95;
+        }
+        
+        /* FAQ */
+        .faq-item {
+            background: var(--glass);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            margin-bottom: 16px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-question {
+            padding: 24px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        .faq-question h4 {
+            font-size: 17px;
+            font-weight: 600;
+            flex: 1;
+        }
+        
+        .faq-icon {
+            flex-shrink: 0;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: var(--glass);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        
+        .faq-icon svg {
+            width: 16px;
+            height: 16px;
+            fill: var(--primary);
+            transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .faq-answer-content {
+            padding: 0 24px 24px;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+        
+        .faq-item.active .faq-icon svg {
+            transform: rotate(180deg);
+        }
+        
+        .faq-item.active .faq-icon {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+        }
+        
+        .faq-item.active .faq-icon svg {
+            fill: white;
+        }
+        
+        /* Signature */
+        .signature-section {
+            max-width: 700px;
+            margin: 64px auto;
+            text-align: center;
+        }
+        
+        .signature-text {
+            font-size: 16px;
+            line-height: 1.8;
+            color: var(--text-muted);
+            margin-bottom: 32px;
+        }
+        
+        .signature {
+            font-size: 36px;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin: 24px 0 8px;
+        }
+        
+        .signature-title {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+        
+        /* Final CTA */
+        .final-section {
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .paths {
+            display: grid;
+            gap: 24px;
+            max-width: 800px;
+            margin: 48px auto;
+            grid-template-columns: 1fr;
+        }
+        
+        @media (min-width: 768px) {
+            .paths {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 32px;
+            }
+        }
+        
+        .path {
+            padding: 32px 24px;
+            border-radius: 20px;
+            border: 2px solid;
+            position: relative;
+        }
+        
+        .path-wrong {
+            background: rgba(255, 51, 102, 0.05);
+            border-color: var(--primary);
+        }
+        
+        .path-right {
+            background: rgba(16, 185, 129, 0.05);
+            border-color: var(--success);
+        }
+        
+        .path-icon {
+            width: 48px;
+            height: 48px;
+            margin: 0 auto 16px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+        
+        .path-wrong .path-icon {
+            background: rgba(255, 51, 102, 0.1);
+            color: var(--primary);
+        }
+        
+        .path-right .path-icon {
+            background: rgba(16, 185, 129, 0.1);
+            color: var(--success);
+        }
+        
+        .path h3 {
+            font-size: 22px;
+            margin-bottom: 16px;
+        }
+        
+        .path-wrong h3 { color: var(--primary); }
+        .path-right h3 { color: var(--success); }
+        
+        .path p {
+            color: var(--text-muted);
+            line-height: 1.7;
+            font-size: 15px;
+        }
+        
+        /* Scroll Reveal Animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Stagger children */
+        .stagger-children > * {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        
+        .stagger-children.active > *:nth-child(1) { transition-delay: 0.1s; }
+        .stagger-children.active > *:nth-child(2) { transition-delay: 0.2s; }
+        .stagger-children.active > *:nth-child(3) { transition-delay: 0.3s; }
+        .stagger-children.active > *:nth-child(4) { transition-delay: 0.4s; }
+        .stagger-children.active > *:nth-child(5) { transition-delay: 0.5s; }
+        .stagger-children.active > *:nth-child(6) { transition-delay: 0.6s; }
+        
+        .stagger-children.active > * {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Utility */
+        .text-center { text-align: center; }
+        .mt-64 { margin-top: 64px; }
+        .mb-64 { margin-bottom: 64px; }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">PROTOCOLO 30D</div>
+                <a href="https://checkout.ticto.app/OD88A880E" class="cta-button" style="padding: 12px 24px; font-size: 14px; min-height: auto; width: auto;">
+                    <span>GARANTIR VAGA</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="text-center">
+                <div class="badge">
+                    <span class="badge-dot"></span>
+                    <span>TRANSFORMAÇÃO REAL EM 30 DIAS</span>
+                </div>
+            </div>
+            
+            <h1 class="hero-title">
+                Como 2.847 Homens Brasileiros <span class="gradient-text">Eliminaram a Ejaculação Precoce</span> em 23-31 Dias
+            </h1>
+            
+            <p class="hero-subtitle">
+                Descubra o "Protocolo de Reprogramação Neural" que transforma homens que gozam em menos de 2 minutos em máquinas de 12-22 minutos de controle total
+            </p>
+            
+            <div class="video-wrapper">
+                <div class="video-container" id="videoContainer">
+                    <div style="position: relative; padding-top: 56.25%;">
+                        <iframe
+                            id="videoPlayer"
+                            src="https://customer-yyz4n5ro12i1x1n1.cloudflarestream.com/b9eee54c0967dbd15804d55fe0e5bc4f/iframe?preload=true&poster=https%3A%2F%2Fcustomer-yyz4n5ro12i1x1n1.cloudflarestream.com%2Fb9eee54c0967dbd15804d55fe0e5bc4f%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
+                            loading="lazy"
+                            style="border: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;"
+                            allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen"
+                            allowfullscreen="true"
+                        ></iframe>
+                        
+                        <!-- BOTÃO GIGANTE OBRIGATÓRIO (Responsivo) -->
+                        <div id="playButton" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 50; background: rgba(0, 0, 0, 0.9); backdrop-filter: blur(10px); display: flex; flex-direction: column; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s;">
+                            <div id="playCircle" style="background: linear-gradient(135deg, #DC2626, #EA580C); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; box-shadow: 0 20px 60px rgba(220, 38, 38, 0.6); animation: pulsePlay 2s ease-in-out infinite;">
+                                <svg width="35" height="35" viewBox="0 0 24 24" fill="white">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </div>
+                            <h3 style="color: white; font-size: 20px; font-weight: 800; text-align: center; margin-bottom: 8px; font-family: 'Inter', sans-serif; padding: 0 20px;">CLIQUE PARA ASSISTIR</h3>
+                            <p style="color: rgba(255, 255, 255, 0.7); font-size: 14px; text-align: center; font-family: 'Inter', sans-serif; padding: 0 20px;">Descubra o protocolo completo</p>
+                        </div>
+                        
+                        <!-- Overlay clicável para pause/play -->
+                        <div id="videoOverlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; cursor: pointer; z-index: 10; display: none;"></div>
+                        
+                        <!-- Botão Fullscreen customizado -->
+                        <button id="fullscreenBtn" style="position: absolute; bottom: 12px; right: 12px; z-index: 20; background: rgba(0, 0, 0, 0.8); border: none; border-radius: 8px; padding: 10px; cursor: pointer; display: none; align-items: center; justify-content: center; backdrop-filter: blur(10px); transition: all 0.3s;">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="white">
+                                <path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <style>
+            @keyframes pulsePlay {
+                0%, 100% { transform: scale(1); box-shadow: 0 20px 60px rgba(220, 38, 38, 0.6); }
+                50% { transform: scale(1.05); box-shadow: 0 25px 70px rgba(220, 38, 38, 0.8); }
+            }
+            
+            #playButton:active {
+                background: rgba(0, 0, 0, 0.95);
+            }
+            
+            #playButton:active #playCircle {
+                transform: scale(0.95);
+            }
+            
+            /* Responsivo */
+            @media (min-width: 768px) {
+                #playCircle {
+                    width: 120px !important;
+                    height: 120px !important;
+                }
+                #playCircle svg {
+                    width: 50px !important;
+                    height: 50px !important;
+                }
+                #playButton h3 {
+                    font-size: 28px !important;
+                    margin-bottom: 12px !important;
+                }
+                #playButton p {
+                    font-size: 16px !important;
+                }
+            }
+            </style>
+            
+            <script>
+            (function() {
+                const playButton = document.getElementById('playButton');
+                const overlay = document.getElementById('videoOverlay');
+                const iframe = document.getElementById('videoPlayer');
+                const fullscreenBtn = document.getElementById('fullscreenBtn');
+                const videoContainer = document.getElementById('videoContainer');
+                let isPlaying = false;
+                let videoStarted = false;
+                
+                console.log('Script carregado');
+                
+                // BOTÃO GIGANTE - Inicia vídeo COM SOM
+                playButton.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    console.log('Botão clicado!');
+                    
+                    if (videoStarted) return;
+                    videoStarted = true;
+                    
+                    // Atualizar src do iframe para iniciar COM SOM
+                    iframe.src = 'https://customer-yyz4n5ro12i1x1n1.cloudflarestream.com/b9eee54c0967dbd15804d55fe0e5bc4f/iframe?autoplay=true&muted=false&controls=false&poster=https%3A%2F%2Fcustomer-yyz4n5ro12i1x1n1.cloudflarestream.com%2Fb9eee54c0967dbd15804d55fe0e5bc4f%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600';
+                    
+                    console.log('Vídeo iniciando...');
+                    isPlaying = true;
+                    
+                    // Remove botão após delay
+                    setTimeout(function() {
+                        playButton.style.opacity = '0';
+                        setTimeout(function() {
+                            playButton.style.display = 'none';
+                            overlay.style.display = 'block';
+                            fullscreenBtn.style.display = 'flex';
+                            console.log('Botão removido, controles ativados');
+                        }, 300);
+                    }, 500);
+                });
+                
+                // Touch também no mobile
+                playButton.addEventListener('touchstart', function(e) {
+                    e.preventDefault();
+                    playButton.click();
+                }, { passive: false });
+                
+                // Pause/Play ao clicar
+                overlay.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    
+                    const message = isPlaying ? 'pause' : 'play';
+                    iframe.contentWindow.postMessage({event: 'command', func: message}, '*');
+                    isPlaying = !isPlaying;
+                    console.log(isPlaying ? 'Play' : 'Pause');
+                });
+                
+                // Fullscreen
+                fullscreenBtn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    if (videoContainer.requestFullscreen) {
+                        videoContainer.requestFullscreen();
+                    } else if (videoContainer.webkitRequestFullscreen) {
+                        videoContainer.webkitRequestFullscreen();
+                    } else if (videoContainer.mozRequestFullScreen) {
+                        videoContainer.mozRequestFullScreen();
+                    }
+                });
+                
+                console.log('Event listeners configurados');
+            })();
+            </script>
+            
+            <div class="timer-section">
+                <div class="timer-label">
+                    <svg class="timer-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.2 3.2.8-1.3-4.5-2.7V7z"/>
+                    </svg>
+                    OFERTA PROMOCIONAL EXPIRA EM
+                </div>
+                <div class="timer-display">
+                    <div class="timer-block">
+                        <span class="timer-number" id="hours">23</span>
+                        <span class="timer-unit">Horas</span>
+                    </div>
+                    <div class="timer-block">
+                        <span class="timer-number" id="minutes">59</span>
+                        <span class="timer-unit">Min</span>
+                    </div>
+                    <div class="timer-block">
+                        <span class="timer-number" id="seconds">45</span>
+                        <span class="timer-unit">Seg</span>
+                    </div>
+                </div>
+                <p class="timer-warning">Preço sobe para R$ 297 quando zerar</p>
+            </div>
+            
+            <div class="cta-container">
+                <a href="https://checkout.ticto.app/OD88A880E" class="cta-button">
+                    <span>QUERO ACESSO AGORA</span>
+                </a>
+                <p class="cta-subtext">Acesso instantâneo + 3 bônus exclusivos</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="section reveal">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">A Verdade Que Ninguém Te Conta</h2>
+                <p class="section-subtitle">
+                    Cada noite de decepção não é apenas sobre sexo. É sobre sua identidade, relacionamentos e autoestima.
+                </p>
+            </div>
+            
+            <div class="grid grid-3 stagger-children">
+                <div class="glass-card problem-card">
+                    <div class="icon-wrapper">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                        </svg>
+                    </div>
+                    <h3>Perda de Identidade</h3>
+                    <p>Você questiona se é homem de verdade. Se merece estar com ela.</p>
+                </div>
+                
+                <div class="glass-card problem-card">
+                    <div class="icon-wrapper">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+                        </svg>
+                    </div>
+                    <h3>Relacionamentos Destruídos</h3>
+                    <p>67% dos relacionamentos com EP terminam em 2 anos. Estatísticas não mentem.</p>
+                </div>
+                
+                <div class="glass-card problem-card">
+                    <div class="icon-wrapper">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/>
+                        </svg>
+                    </div>
+                    <h3>Custo Financeiro</h3>
+                    <p>R$ 7.920/ano em tratamentos que apenas mascaram sintomas sem curar.</p>
+                </div>
+            </div>
+            
+            <div class="glass-card mt-64" style="max-width: 700px; margin-left: auto; margin-right: auto; margin-top: 64px;">
+                <h3 style="font-size: 24px; margin-bottom: 16px; background: linear-gradient(135deg, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">O PROBLEMA REAL:</h3>
+                <p style="font-size: 17px; line-height: 1.8; color: var(--text);">
+                    Seu cérebro foi <strong>LITERALMENTE treinado</strong> para ejacular rápido através de anos de pornografia + masturbação em 2-5 minutos.
+                </p>
+                <p style="font-size: 17px; line-height: 1.8; color: var(--text); margin-top: 16px;">
+                    Quando você tenta transar, seu corpo está no <strong>piloto automático</strong> seguindo o padrão neural que você criou sem perceber.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="section reveal">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">O Protocolo Que Muda Tudo</h2>
+                <p class="section-subtitle">
+                    Dr. Ricardo Mendes revelou: "O problema não está no seu pênis. Está no seu cérebro."
+                </p>
+            </div>
+            
+            <div style="max-width: 800px; margin: 0 auto 64px;">
+                <div class="glass-card step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Detox Neural de 21 Dias</h3>
+                        <p>Quebra o condicionamento antigo eliminando completamente o hábito que criou o problema</p>
+                    </div>
+                </div>
+                
+                <div class="glass-card step" style="margin-top: 24px;">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Masturbação Consciente</h3>
+                        <p>Técnica específica que treina controle REAL (não distração mental)</p>
+                    </div>
+                </div>
+                
+                <div class="glass-card step" style="margin-top: 24px;">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Técnicas de Transferência</h3>
+                        <p>Leva o controle da masturbação para o sexo real</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="glass-card text-center" style="max-width: 600px; margin: 0 auto; padding: 40px 32px;">
+                <p style="font-size: 12px; color: var(--accent); font-weight: 700; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.1em;">ESTUDO INTERNO</p>
+                <p style="font-size: 28px; font-weight: 800; color: var(--text); line-height: 1.4;">
+                    500 homens testaram.<br>
+                    <span style="background: linear-gradient(135deg, var(--success), #047857); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">89% curados em 30 dias</span> sem remédio.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section reveal">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">2.847 Homens Transformados</h2>
+            </div>
+            
+            <div class="grid stagger-children">
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">C</div>
+                        <div class="testimonial-info">
+                            <h4>Carlos, 29 anos</h4>
+                            <span>Belo Horizonte</span>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "Casado há 4 anos. Gozava só de colocar camisinha. Em 28 dias: 12 minutos de controle. Minha esposa me procura para transar agora. Nossa intimidade voltou."
+                    </p>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">A</div>
+                        <div class="testimonial-info">
+                            <h4>André, 24 anos</h4>
+                            <span>Virgem → Rei</span>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "Era virgem, morria de medo. Pratiquei 30 dias ANTES. Primeira vez: 18 minutos. Ela ficou impressionada. Hoje namoro há 8 meses."
+                    </p>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">M</div>
+                        <div class="testimonial-info">
+                            <h4>Marcelo, 35 anos</h4>
+                            <span>Reconquistou a Vida</span>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "Primeiro casamento acabou por isso. Com o protocolo, estou namorando de novo. Semana passada: 22 minutos. Ela pediu pra parar de prazer."
+                    </p>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">J</div>
+                        <div class="testimonial-info">
+                            <h4>Juliano</h4>
+                            <span>Pai de 3, 12h/dia</span>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "Trabalho 12h/dia, 3 filhos. Protocolo leva 15min/dia - fazia no banho. Em 26 dias estava curado."
+                    </p>
+                </div>
+            </div>
+            
+            <div class="glass-card text-center mt-64" style="max-width: 700px; margin-left: auto; margin-right: auto; padding: 48px 32px;">
+                <div class="stats-grid">
+                    <div class="stat">
+                        <span class="stat-number">2.847</span>
+                        <span class="stat-label">Transformados</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">650%</span>
+                        <span class="stat-label">Aumento</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">26</span>
+                        <span class="stat-label">Dias Médios</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">89%</span>
+                        <span class="stat-label">Taxa Sucesso</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details -->
+    <section class="section reveal">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tudo Que Você Recebe</h2>
+            </div>
+            
+            <div class="grid stagger-children">
+                <div class="phase">
+                    <div class="phase-label">Semanas 1-3</div>
+                    <h3>FASE 1: Detox Neural</h3>
+                    <ul>
+                        <li>Método para quebrar 15 anos de condicionamento em 21 dias</li>
+                        <li>Protocolo dia-a-dia para eliminar pornografia</li>
+                        <li>Técnicas de substituição para momentos críticos</li>
+                        <li>Sinais de que o detox está funcionando</li>
+                    </ul>
+                    <div class="phase-result">
+                        <span>Quebra completa do reflexo antigo</span>
+                    </div>
+                </div>
+                
+                <div class="phase">
+                    <div class="phase-label">Semanas 2-4</div>
+                    <h3>FASE 2: Masturbação Consciente</h3>
+                    <ul>
+                        <li>Técnica que constrói controle real</li>
+                        <li>Protocolo de respiração ejaculatório</li>
+                        <li>Como identificar o "ponto sem volta"</li>
+                        <li>Como aumentar de 2 para 15+ minutos</li>
+                    </ul>
+                    <div class="phase-result">
+                        <span>Controle de 15-25 minutos</span>
+                    </div>
+                </div>
+                
+                <div class="phase">
+                    <div class="phase-label">Semanas 3-4</div>
+                    <h3>FASE 3: Transferência Real</h3>
+                    <ul>
+                        <li>Como transferir controle para penetração</li>
+                        <li>Técnicas para diferentes posições</li>
+                        <li>Protocolo para primeiras tentativas</li>
+                        <li>Comunicação com parceira</li>
+                    </ul>
+                    <div class="phase-result">
+                        <span>Controle de 12-22 minutos no sexo</span>
+                    </div>
+                </div>
+                
+                <div class="phase">
+                    <div class="phase-label">Ongoing</div>
+                    <h3>FASE 4: Manutenção</h3>
+                    <ul>
+                        <li>Protocolo semanal (10 minutos)</li>
+                        <li>Como evitar recaídas</li>
+                        <li>Técnicas avançadas para 30+ minutos</li>
+                        <li>Otimização contínua</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bonus -->
+    <section class="section reveal">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">3 Bônus Exclusivos</h2>
+                <p class="section-subtitle">Valor total: R$ 591 - Inclusos gratuitamente</p>
+            </div>
+            
+            <div class="grid stagger-children">
+                <div class="bonus">
+                    <span class="bonus-tag">BÔNUS #1</span>
+                    <h3>Manual Anti-Pornografia</h3>
+                    <div class="bonus-value">VALOR: R$ 197 - GRÁTIS</div>
+                    <p>Protocolo de 21 dias para quebrar o vício que está CAUSANDO sua ejaculação precoce. 91% dos homens com EP consomem pornografia.</p>
+                </div>
+                
+                <div class="bonus">
+                    <span class="bonus-tag">BÔNUS #2</span>
+                    <h3>Checklist 30 Dias</h3>
+                    <div class="bonus-value">VALOR: R$ 97 - GRÁTIS</div>
+                    <p>Acompanhamento diário para não se perder. Cada dia mapeado, cada exercício marcado.</p>
+                </div>
+                
+                <div class="bonus">
+                    <span class="bonus-tag">BÔNUS #3</span>
+                    <h3>Grupo Privado Telegram</h3>
+                    <div class="bonus-value">VALOR: R$ 297 - GRÁTIS</div>
+                    <p>Comunidade exclusiva. Suporte 24/7, dicas exclusivas e acesso direto ao criador.</p>
+                </div>
+            </div>
+            
+            <div class="price-stack">
+                <div class="price-row">
+                    <span class="price-label">Programa Principal</span>
+                    <span class="price-value">R$ 497</span>
+                </div>
+                <div class="price-row">
+                    <span class="price-label">Bônus #1</span>
+                    <span class="price-value">R$ 197</span>
+                </div>
+                <div class="price-row">
+                    <span class="price-label">Bônus #2</span>
+                    <span class="price-value">R$ 97</span>
+                </div>
+                <div class="price-row">
+                    <span class="price-label">Bônus #3</span>
+                    <span class="price-value">R$ 297</span>
+                </div>
+                <div class="price-divider"></div>
+                <div class="price-total-old">R$ 1.088</div>
+                <div class="price-total-new">R$ 57</div>
+                <div class="price-savings">ECONOMIA: R$ 1.031 (95%)</div>
+            </div>
+            
+            <div class="cta-container mt-64">
+                <a href="https://checkout.ticto.app/OD88A880E" class="cta-button">
+                    <span>GARANTIR MINHA TRANSFORMAÇÃO</span>
+                </a>
+                <p class="cta-subtext">Acesso imediato + Todos os bônus</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee -->
+    <section class="section reveal">
+        <div class="container">
+            <div class="guarantee">
+                <div class="guarantee-icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/>
+                    </svg>
+                </div>
+                <h3>Garantia Total de 7 Dias</h3>
+                <p>Baixe o protocolo. Comece a aplicar. Se não tiver controle SIGNIFICATIVO em 7 dias, receba 100% do dinheiro de volta.</p>
+                <p style="margin-top: 20px; font-weight: 700;">Sem perguntas. Sem burocracia.</p>
+                <p style="margin-top: 20px;">Taxa de reembolso: menos de 2%</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section reveal">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Perguntas Frequentes</h2>
+            </div>
+            
+            <div style="max-width: 700px; margin: 0 auto;">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Quanto tempo até ver resultados?</h4>
+                        <div class="faq-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 10l5 5 5-5z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            A maioria vê melhora significativa nos primeiros 7 dias. Controle de 12+ minutos acontece entre 23-31 dias. Record: 12 dias. Garantia de 7 dias.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Funciona para casos extremos?</h4>
+                        <div class="faq-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 10l5 5 5-5z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Sim! Funcionou para homens que gozavam só de colocar camisinha. Ataca a raiz neural, não importa quão grave. Sucesso com virgens de 40+ anos e casos de 20+ anos.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Minha parceira vai descobrir?</h4>
+                        <div class="faq-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 10l5 5 5-5z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Não. 100% discreto. Você pratica sozinho, 15min/dia. Ela só nota os resultados. Muitas acreditam que foi "desenvolvimento natural".
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>E se eu for virgem?</h4>
+                        <div class="faq-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 10l5 5 5-5z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            PERFEITO! Virgens têm vantagem - sem trauma anterior. Você estreia com controle total. Centenas praticaram antes da primeira vez e impressionaram parceiras.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal Note -->
+    <section class="section reveal">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Uma Mensagem de Rafael</h2>
+            </div>
+            
+            <div class="signature-section">
+                <p class="signature-text">
+                    Três anos atrás, eu estava chorando no banheiro após mais uma noite de decepção. Descobri que minha ejaculação precoce não era falha de caráter. Era <strong>CONDICIONAMENTO NEURAL</strong>. E condicionamento pode ser desfeito.
+                </p>
+                <p class="signature-text">
+                    Este protocolo não é apenas sobre sexo. É sobre você finalmente se tornar o homem que sempre soube que poderia ser.
+                </p>
+                <p class="signature-text">
+                    Sua masculinidade merece ser plena. Sua confiança merece ser inabalável.
+                </p>
+                <p style="font-weight: 700; margin-top: 32px; margin-bottom: 8px;">Com confiança no seu sucesso,</p>
+                <div class="signature">Rafael</div>
+                <p class="signature-title">Criador do Protocolo de Reprogramação Neural</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-section reveal">
+        <div class="container">
+            <h2 class="section-title">Você Está Numa Encruzilhada...</h2>
+            
+            <div class="paths">
+                <div class="path path-wrong">
+                    <div class="path-icon">✕</div>
+                    <h3>Caminho 1: Inação</h3>
+                    <p>Você fecha esta página. Continua gozando em 2 minutos. Em 30 dias, estará exatamente onde está agora.</p>
+                </div>
+                
+                <div class="path path-right">
+                    <div class="path-icon">✓</div>
+                    <h3>Caminho 2: Transformação</h3>
+                    <p>Você implementa o protocolo. Em 30 dias, está durando 12-22 minutos. Você conquistou o controle total.</p>
+                </div>
+            </div>
+            
+            <div class="glass-card" style="max-width: 600px; margin: 64px auto; padding: 40px 32px;">
+                <p style="font-size: 19px; line-height: 1.8; text-align: center; color: var(--text);">
+                    <strong style="color: var(--accent);">Imagine 30 dias a partir de hoje:</strong><br><br>
+                    15 minutos depois, ela está ofegante. Você ainda no controle total. Ela te olha: <em>"Cara, você é incrível."</em>
+                </p>
+            </div>
+            
+            <div class="timer-section" style="margin-bottom: 48px;">
+                <div class="timer-label">
+                    <svg class="timer-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.2 3.2.8-1.3-4.5-2.7V7z"/>
+                    </svg>
+                    OFERTA EXPIRA EM
+                </div>
+                <div class="timer-display">
+                    <div class="timer-block">
+                        <span class="timer-number" id="hours2">23</span>
+                        <span class="timer-unit">Horas</span>
+                    </div>
+                    <div class="timer-block">
+                        <span class="timer-number" id="minutes2">59</span>
+                        <span class="timer-unit">Min</span>
+                    </div>
+                    <div class="timer-block">
+                        <span class="timer-number" id="seconds2">45</span>
+                        <span class="timer-unit">Seg</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-container">
+                <a href="https://checkout.ticto.app/OD88A880E" class="cta-button" style="font-size: 18px; padding: 24px 48px;">
+                    <span>SIM! EU ESCOLHO A TRANSFORMAÇÃO</span>
+                </a>
+                <p class="cta-subtext">Junte-se aos 2.847 homens transformados</p>
+            </div>
+            
+            <div style="margin-top: 64px; text-align: center; color: var(--text-muted); font-size: 14px; line-height: 1.8; max-width: 600px; margin-left: auto; margin-right: auto;">
+                <p>P.S. - Garantia de 7 dias. Você não tem nada a perder exceto sua ejaculação precoce.</p>
+                <p style="margin-top: 16px;">P.P.S. - Bônus de R$ 591 desaparecem quando o timer zerar.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Countdown Timer
+        function startCountdown() {
+            let endTime = localStorage.getItem('countdownEnd');
+            if (!endTime) {
+                endTime = new Date().getTime() + (24 * 60 * 60 * 1000);
+                localStorage.setItem('countdownEnd', endTime);
+            }
+            
+            function updateTimer() {
+                const now = new Date().getTime();
+                const distance = endTime - now;
+                
+                if (distance < 0) {
+                    document.querySelectorAll('.timer-number').forEach(el => el.textContent = '00');
+                    return;
+                }
+                
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+                document.querySelectorAll('#hours, #hours2').forEach(el => {
+                    el.textContent = hours.toString().padStart(2, '0');
+                });
+                document.querySelectorAll('#minutes, #minutes2').forEach(el => {
+                    el.textContent = minutes.toString().padStart(2, '0');
+                });
+                document.querySelectorAll('#seconds, #seconds2').forEach(el => {
+                    el.textContent = seconds.toString().padStart(2, '0');
+                });
+            }
+            
+            updateTimer();
+            setInterval(updateTimer, 1000);
+        }
+        
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                const wasActive = item.classList.contains('active');
+                
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+                
+                if (!wasActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+        
+        // Scroll Reveal
+        const revealOptions = {
+            threshold: 0.15,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, revealOptions);
+        
+        document.querySelectorAll('.reveal, .stagger-children').forEach(el => {
+            revealObserver.observe(el);
+        });
+        
+        // Initialize
+        startCountdown();
+    </script>
+</body>
+</html>
